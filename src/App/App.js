@@ -10,7 +10,7 @@ import { HygraphProvider } from '../Context';
 function App() {
   return (
     <>
-    <Router basename="/portfolio">
+    <Router>
       <HygraphProvider>
         <header className="mx-auto items-center bg-background text-brown-200">
           <Navigation
