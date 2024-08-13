@@ -12,26 +12,6 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-    @apply text-green-200;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-.home-banner {
-    @apply text-green-200;
-    bottom: 35%;
-    left: 10%;
-    h1 {
-        font-size: 50px;
-        font-weight: 700;
-    }
-    p {
-        font-size: 20px;
-        font-weight: 500;
-    }
-}
-
 .contact-banner {
     h1 {
         font-size: 50px;
@@ -100,10 +80,6 @@ h2 {
 
 .zoom-out img:hover {
 	transform: scale(1);
-}
-
-.home-button:hover {
-    @apply bg-green-600;
 }
 
 .about-image {

@@ -5,9 +5,6 @@ export default function Navigation ({ navClassName, ulClassName, homeLinkClassNa
   return (
     <nav className={`${navClassName}`}>
       <ul className={`${ulClassName}`}>
-        <li className={`${homeLinkClassName}`}>
-          <Link to={ROUTES.Home}>Anna-Yodit</Link>
-        </li>
         <div className={`${divClassName}`}>
           <li className={`${liClassName}`}>
               <Link to={ROUTES.Project}>PROJECTS</Link>

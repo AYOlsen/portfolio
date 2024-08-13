@@ -1,9 +1,9 @@
 // Banner.js
-const Banner = ({ title, text, className }) => {
+const Banner = ({ title, text, className, titleClassName, textClassName}) => {
     return (
-        <div className={`banner ${className}`}>
-            <h2>{title}</h2>
-            <p>{text}</p>
+        <div className={`${className}`}>
+            <h2 className={`${titleClassName}`}>{title}</h2>
+            <p className={`${textClassName}`}>{text}</p>
         </div>
         );
     };
