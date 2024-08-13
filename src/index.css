@@ -6,11 +6,6 @@
     max-width: 1400px;
 }
 
-h1 {
-    @apply text-green-200;
-    font-size: 45px;
-    font-weight: 700;
-}
 
 .contact-banner {
     h1 {
@@ -64,8 +59,10 @@ h1 {
     }
 }
 
-.project-list li:nth-child(even) {
-    margin-top: 100px;
+@media (min-width: 768px) {
+    .project-list li:nth-child(even) {
+        margin-top: 100px;
+    }
 }
 
 .zoom-out {

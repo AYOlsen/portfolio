@@ -48,12 +48,12 @@ export default function ProjectPage () {
     return (
         <>
             <section className='bg-brown-900'>
-                <div className='max-width mx-auto pb-20'>
-                    <h1 className='pt-32 mb-8'>Projects</h1>
+                <div className='max-width mx-auto pb-20 px-6'>
+                    <h1 className='pt-16 md:pt-32 mb-6 font-bold text-2xl md:text-3xl'>Projects</h1>
                     {data && data.projects && data.projects.length > 0 && (
-                        <ul className='project-list flex flex-wrap gap-x-52 justify-between mx-auto w-[1100px]' ref={projectListRef}>
+                        <ul className='project-list md:flex md:flex-wrap gap-x-52 md:justify-between mx-auto md:w-[1100px]' ref={projectListRef}>
                             {data.projects.map((project) => (
-                                <li key={project.id} id={project.id} className="mt-8">
+                                <li key={project.id} id={project.id} className="mt-6 md:mt-8 py-6">
                                     <ProjectCard
                                         title={project.title}
                                         category={project.category}

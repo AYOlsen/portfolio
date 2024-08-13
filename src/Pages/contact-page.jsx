@@ -1,26 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import gsap from 'gsap';
 import { Banner } from '../Components/Banner';
 
 export default function ContactPage () {
-  const formRef = useRef(null);
-
-  useEffect(() => {
-    const formElement = formRef.current;
-
-    gsap.set(formElement, { opacity: 0 });
-
-    gsap.to(formElement, {
-      opacity: 1,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: formElement,
-        start: 'top 80%',
-        end: 'bottom 20%', 
-        once: true,
-      },
-    });
-  }, []);
 
   return (
     <>
@@ -29,12 +11,13 @@ export default function ContactPage () {
           <div className='flex flex-col items-center'>
             <Banner
               className="contact-banner text-center"
+              titleClassName='text-3xl font-bold '
               title='Get in touch'
               text='If you have any questions, feel free to get in touch. I look forward to hearing from you.'
             />
             <div className='w-3/4 mt-4 border-t-2 border-green-200 flex justify-center'>
-              <div className='w-2/5 mt-8 flex justify-between items-center'>
-                <div className='flex flex-col items-center'>
+              <div className='w-2/5 mt-8 md:flex md:justify-between items-center'>
+                <div className='flex flex-col items-center mb-4 md:mb-0'>
                   <img className='w-12' src="images/Email.svg" alt="mail icon" />
                   <a className='text-green-200' href='mailto:olsenannayodit06@gmail.com'>olsenannayodit06@gmail.com</a>
                 </div>
