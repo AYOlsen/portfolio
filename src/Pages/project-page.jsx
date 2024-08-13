@@ -48,8 +48,8 @@ export default function ProjectPage () {
     return (
         <>
             <section className='bg-brown-900'>
-                <div className='max-width mx-auto pb-20 px-6'>
-                    <h1 className='pt-16 md:pt-32 mb-6 font-bold text-2xl md:text-3xl'>Projects</h1>
+                <div className='max-width mx-auto pb-20 px-4'>
+                    <h1 className='pt-12 md:pt-32 mb-8 font-bold text-2xl md:text-3xl'>Projects</h1>
                     {data && data.projects && data.projects.length > 0 && (
                         <ul className='project-list md:flex md:flex-wrap gap-x-52 md:justify-between mx-auto md:w-[1100px]' ref={projectListRef}>
                             {data.projects.map((project) => (

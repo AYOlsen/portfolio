@@ -23,16 +23,16 @@ export default function ProjectDetailPage () {
     return (
         <>
             <section className='bg-brown-900'>
-                <div className='max-width mx-auto min-h-[90vh] pb-20'>
+                <div className='max-width mx-auto min-h-[90vh] pb-20 px-4'>
                     {data.project  && ( 
                         console.log('GitHub URL:', data.project.github),
-                        <div key={data.project.id} id={data.slug} className="max-width mx-auto justify-between pt-20">
-                            <p className='text-lg font-semibold text-green-200 mb-2'>{data.project.category}</p>
-                            <h2 className='text-4xl mb-6 text-green-200 mb-4 font-bold'>{data.project.title}</h2>
-                            <div className='flex justify-center	 '>
-                                <img className="object-cover h-80 mb-16 mx-auto rounded-lg" src={data.project.image.url} alt={data.project.title} />
-                                <div className='w-2/5'>
-                                    <div className="project-detail h-3/4 whitespace-pre-line text-green-200 text-base font-normal">
+                        <div key={data.project.id} id={data.slug} className="max-width mx-auto justify-between pt-10 md:pt-20">
+                            <p className='text-base text-green-200'>{data.project.category}</p>
+                            <h2 className='text-2xl mb-6 text-green-200 mb-7 font-bold'>{data.project.title}</h2>
+                            <div className='md:flex md:justify-center'>
+                                <img className="object-cover h-80 mb-12 mx-auto rounded-lg" src={data.project.image.url} alt={data.project.title} />
+                                <div className='md:w-2/5'>
+                                    <div className="project-detail h-3/4 whitespace-pre-line text-green-200 text-lg font-normal">
                                         {data.project.description}
                                     </div>
                                     <div className='mt-2'>

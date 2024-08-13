@@ -3,9 +3,9 @@ export default function AboutPage () {
     return (
       <>
         <section className="bg-background">
-          <div className='max-width mx-auto py-8 md:py-32 md:flex md:justify-between px-7'>
+          <div className='max-width mx-auto mb-8 md:py-32 md:flex md:justify-between px-4'>
             <div className='md:w-2/5 text-brown-200 about-text'>
-              <h2 className='text-brown-200 mb-8 font-bold text-3xl'>About me</h2>
+              <h2 className='pt-12 text-brown-200 mb-8 font-bold text-2xl md:text-3xl'>About me</h2>
               <p>
                 Hello, I'm Anna-Yodit Olsen, a recently graduated front-end developer. My expertise includes HTML, CSS, and JavaScript.
               </p>

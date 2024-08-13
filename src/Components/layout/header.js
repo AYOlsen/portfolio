@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="relative mx-auto items-center bg-background text-brown-200">
-      <div className="flex justify-between items-center w-[90%] mx-auto pt-4">
+      <div className="flex justify-between items-center w-[95%] mx-auto pt-4">
         <p className="bg-twe_blue-300 font-semibold text-xl pl-2">
           <Link to={ROUTES.Home}>Anna-Yodit</Link>
         </p>

@@ -72,7 +72,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="hidden md:block md:absolute md:w-[80%] md:h-full">
+            <div className="hidden md:block md:absolute md:w-[85%] md:h-full">
               <Scene />
             </div>
           </div>
