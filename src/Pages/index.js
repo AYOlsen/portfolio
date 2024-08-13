@@ -1,7 +1,7 @@
 import AboutPage from "./about-page";
 import ContactPage from "./contact-page";
-// import ProjectPage from "./project-page";
-// import ProjectDetailPage from "./project-detail-page";
+import ProjectPage from "./project-page";
+import ProjectDetailPage from "./project-detail-page";
 import HomePage from "./home-page";
 
-export {AboutPage, ContactPage,  HomePage };
+export {AboutPage, ContactPage,  HomePage, ProjectPage, ProjectDetailPage};

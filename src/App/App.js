@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ROUTES } from '../Routes';
 import { Navigation, Footer } from '../Components/layout';
-import { HomePage, ContactPage, AboutPage} from '../Pages';
+import { HomePage, ContactPage, AboutPage, ProjectPage, ProjectDetailPage,} from '../Pages';
 import { HygraphProvider } from '../Context';
 
 
@@ -24,6 +24,10 @@ function App() {
         <main>
           <Routes>
             <Route path={ROUTES.Home} element={<HomePage />} />
+            <Route path={ROUTES.Project}>
+              <Route index element={<ProjectPage />} />
+              <Route path={ROUTES.ProjectDetail} element={<ProjectDetailPage />} />
+            </Route>
             <Route path={ROUTES.About} element={<AboutPage />} />
             <Route path={ROUTES.Contact} element={<ContactPage />} />
           </Routes>
