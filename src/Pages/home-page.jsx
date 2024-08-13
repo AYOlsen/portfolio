@@ -45,10 +45,10 @@ export default function HomePage() {
           <div className="pt-16 px-4 md:hidden">
             <img src={process.env.PUBLIC_URL + '/images/about-me.png'} alt="" />
           </div>
-          <div className="">
+          <div className="max-width">
             <div className="pt-4 px-4">
               <Banner
-                className="text-green-200 w-full md:w-[400px] md:absolute md:top-64 md:left-[10%]"
+                className="text-green-200 w-full md:w-96 md:absolute md:top-64 md:left-[10%]"
                 titleClassName="font-bold text-3xl"
                 title={
                   <>
@@ -72,7 +72,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="hidden md:block md:absolute md:w-full md:h-full">
+            <div className="hidden md:block md:absolute md:w-[80%] md:h-full">
               <Scene />
             </div>
           </div>

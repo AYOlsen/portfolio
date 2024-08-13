@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="relative mx-auto items-center bg-background text-brown-200">
-      <div className="flex justify-between items-center max-width mx-auto pt-4">
+      <div className="flex justify-between items-center w-[90%] mx-auto pt-4">
         <p className="bg-twe_blue-300 font-semibold text-2xl pl-2">
           <Link to={ROUTES.Home}>Anna-Yodit</Link>
         </p>
@@ -65,7 +65,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
           <Navigation
-            navClassName={`max-width mx-auto`}
+            navClassName={`mx-auto`}
             ulClassName={`flex flex-row justify-between pt-6 font-lg`}
             divClassName={`flex`}
             liClassName={`mx-6`}
