@@ -9,7 +9,7 @@ const Scene = () => {
 
   return (
     <>
-      <Canvas className='' style={{ pointerEvents: 'none' }}>
+      <Canvas style={{ pointerEvents: 'none' }}>
         <Desk />
         <Deskplant />
         <Person />
