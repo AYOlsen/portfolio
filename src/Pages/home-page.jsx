@@ -1,41 +1,41 @@
 import { ROUTES } from "../Routes";
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 
 import { LatestProjectCard } from '../Components/Cards';
+import { Scene } from '../Components/Scene';
 import { Banner } from '../Components/Banner';
 import { Button } from '../Components/Buttons';
-// import { Scene } from 'Components/Scene';
 
 import { useQuery } from '@apollo/client';
-import { GET_SERVICES } from '../Graphgl';
+// import { GET_SERVICES } from '../Graphgl';
 import { GET_LATESTPROJECTS } from '../Graphgl';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HomePage() {
-  const { data: serviceData } = useQuery(GET_SERVICES);
+  // const { data: serviceData } = useQuery(GET_SERVICES);
   const { data: projectData } = useQuery(GET_LATESTPROJECTS);
 
-  const cardsRef = useRef(null);
+  // const cardsRef = useRef(null);
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    if (cardsRef.current) {
-      gsap.from(cardsRef.current, {
-        scrollTrigger: {
-          trigger: cardsRef.current,
-          start: 'top 50%',
-          end: '10% 50%',
-          scrub: 1,
-        },
-        x: -50, 
-        opacity: 0,
-        duration: 3,
-      });
-    }
-  }, [serviceData]);
+  //   if (cardsRef.current) {
+  //     gsap.from(cardsRef.current, {
+  //       scrollTrigger: {
+  //         trigger: cardsRef.current,
+  //         start: 'top 50%',
+  //         end: '10% 50%',
+  //         scrub: 1,
+  //       },
+  //       x: -50, 
+  //       opacity: 0,
+  //       duration: 3,
+  //     });
+  //   }
+  // }, [serviceData]);
   
 
   return (
@@ -68,7 +68,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-          {/* <Scene /> */}
+          <Scene />
       </section>
 
       {/* <section className="bg-background ">

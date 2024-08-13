@@ -1,8 +1,7 @@
 import { ApolloClient, ApolloProvider, ApolloLink, HttpLink, InMemoryCache, from } from '@apollo/client';
 
-import { settings } from '../Configs';
+import settings from '../Configs/index.ts';
 
-// Create a HTTP Link to GraphQL resource
 const httpLink = new HttpLink({
     uri: settings.HYGRAPH_CONTENT_API_URL,
 });
