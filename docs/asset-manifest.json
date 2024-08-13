@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio_Anna-Yodit/static/css/main.86d8f162.css",
+    "main.js": "/portfolio_Anna-Yodit/static/js/main.67eac17a.js",
+    "static/js/206.4644f2ac.chunk.js": "/portfolio_Anna-Yodit/static/js/206.4644f2ac.chunk.js",
+    "static/media/person.glb": "/portfolio_Anna-Yodit/static/media/person.db37570af4a050907b5d.glb",
+    "static/media/desk.glb": "/portfolio_Anna-Yodit/static/media/desk.01e362eca506e0ee1ab9.glb",
+    "static/media/computer.glb": "/portfolio_Anna-Yodit/static/media/computer.78361b1f79e6f18e7b28.glb",
+    "static/media/desk-plant.glb": "/portfolio_Anna-Yodit/static/media/desk-plant.8609a678068dc7280abd.glb",
+    "index.html": "/portfolio_Anna-Yodit/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.86d8f162.css",
+    "static/js/main.67eac17a.js"
+  ]
+}

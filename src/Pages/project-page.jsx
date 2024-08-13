@@ -2,7 +2,7 @@ import { useQuery } from '@apollo/client';
 import { ProjectCard } from '../Components/Cards';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 import { GET_PROJECTS } from '../Graphgl';
 
